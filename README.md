@@ -50,9 +50,9 @@ Our objective is to identify patterns in solar magnetic data that help forecast 
 ## Dataset
 The dataset used is Active region magnetograms for solar flare prediction: Full resolution dataset documented on Dryad and it can be found on this [link](https://datadryad.org/dataset/doi:10.5061/dryad.dv41ns23n). 
 
-For our work, we will focus on the Validation_data_by_AR.csv file, which contains pre-processed features extracted from solar active regions (ARs). Each row represents a single active region, while columns describe numerical measurements derived from magnetogram images captured by the SDO/HMI instrument.
+The dataset contains pre-processed features extracted from solar active regions (ARs). Each row represents a single active region, while columns describe numerical measurements derived from magnetogram images captured by the SDO/HMI instrument.
 
-This file includes a total of 95,933 records and 32 features grouped into several categories:
+This file includes a total of 950,048 records and 32 features grouped into several categories:
 
 | Gradient features  | Neutral line features         | Wavelet features          | Flux features            | Flare class         | Flare strength  | Image path                |
 |--------------------|------------------------------|---------------------------|---------------------------|---------------------|-----------------|---------------------------|
