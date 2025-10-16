@@ -80,15 +80,26 @@ Further details and visualizations are available in the EECE490ProjectData.ipynb
 
 ## Model Training Plan
 
-Our training process follows a step-by-step approach to ensure a clear understanding of each model, its purpose, and the reason it was chosen.
+Our training process follows a step-by-step approach to ensure a clear understanding of each model, its purpose, and the reason it was chosen. The following two models have been implemented before but we will go ahead establish these models to visualize the accuracies and prediction scores:
+
 **- Baseline – Support Vector Machine (SVM):**
+
 We begin with an SVM trained on the 29 extracted magnetic features to set a baseline. This model helps us understand how well linear decision boundaries perform on our data and establishes a reference point for future comparisons.
 
 **- Ensemble Models – Random Forest and XGBoost:**
+
 After the baseline, we move to ensemble models to explore nonlinear relationships between features. These models help us see how combining multiple decision trees can improve accuracy and reveal which magnetic parameters have the strongest impact on flare prediction.
 
+After that we will implement new models such as:
+
 **- Neural Network**
-Finally, we plan to train an MLP to study how deeper architectures can capture complex feature interactions and subtle variations between flare categories. This step allows us to compare traditional models with deep learning approaches and understand their trade-offs.
+
+We plan to train aa neural network to study how deeper architectures can capture complex feature interactions and subtle variations between flare categories. This step allows us to compare traditional models with deep learning approaches and understand their trade-offs.
+
+**- Decision Tree**
+
+We plan to train a Decision Tree model to establish a simple model for solar flare classification. This will help us understand which magnetic features contribute most to flare prediction and provide a foundation for comparing more advanced ensemble and boosting models.
+
 
 This is a preliminary proposal, and we will continue experimenting with additional models throughout the project. The goal is to compare their performance, interpretability, and generalization ability before finalizing the best approach.
 
