@@ -4,12 +4,12 @@ This project aims to predict solar flare intensity using machine learning models
 Solar flares are categorized into four main classes based on their intensity: C, M, X, and 0 (no flare).
 Our objective is to identify patterns in solar magnetic data that help forecast flare strength accurately.
 
-##Dataset
+## Dataset
 The dataset used is found on this [link](https://datadryad.org/dataset/doi:10.5061/dryad.dv41ns23n). 
 
 For our work, we will focus on the Validation_data_by_AR.csv file, which contains pre-processed features extracted from solar active regions (ARs). Each row represents a single active region, while columns describe numerical measurements derived from magnetogram images captured by the SDO/HMI instrument.
 
-This file includes a total of 31 features grouped into several categories:
+This file includes a total of 95,934 records and 31 features grouped into several categories:
 
 | Gradient features  | Neutral line features         | Wavelet features          | Flux features            | Flare class         | Image path                |
 |--------------------|------------------------------|---------------------------|---------------------------|---------------------|---------------------------|
@@ -25,4 +25,15 @@ This file includes a total of 31 features grouped into several categories:
 |                    | NL bending energy median     |                           |                           |                     |                           |
 |                    | NL bending energy min        |                           |                           |                     |                           |
 |                    | NL bending energy max        |                           |                           |                     |                           |
+
+## Data exploration
+
+The dataset was explored to understand its structure, feature behavior, and class balance. An initial analysis showed that non-flare events dominate the data, leading to class imbalance. To handle this, flare strengths were grouped into four main categories (0, C, M, and X), with potential rebalancing through SMOTE in later stages.
+
+Feature variance, correlation, and mutual information analyses helped identify the most relevant predictors for solar flare classification. High-variance and strongly correlated features were found to carry the most information about flare strength, confirming that the dataset provides a strong foundation for model training.
+
+Further details and visualizations are available in the EECE490ProjectData.ipynb notebook.
+
+
+
 
