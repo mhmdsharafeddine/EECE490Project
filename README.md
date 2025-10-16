@@ -1,7 +1,8 @@
 # Solar Flares Classification Project
 ## Prerequisites
 - Python 3.8 or higher
-- Libraries
+- Jupyter Notebook
+- Libraries:
   - Seaborn
   - Matplotlib
   - Numpy
@@ -9,9 +10,12 @@
   - Pytorch
   - Pandas
   - Tensorflow
+  - Notebook
 
 To install these modules please make sure to follow these steps:
+
 **On windows:**
+
 First check the version of the installed python
   ``` bash
 python --version
@@ -31,7 +35,12 @@ After that, download the requirements.txt file found above and import these libr
 ```bash
 pip install -r requirements.txt
 ```
+## To clone the repository:
+```bash
+git clone https://github.com/mhmdsharafeddine/EECE490Project.git
+cd EECE490Project
 
+```
 
 ## Overview
 This project aims to predict solar flare intensity using machine learning models trained on features extracted from magnetogram images of solar active regions.
@@ -39,11 +48,11 @@ Solar flares are categorized into four main classes based on their intensity: C,
 Our objective is to identify patterns in solar magnetic data that help forecast flare strength accurately.
 
 ## Dataset
-The dataset used is found on this [link](https://datadryad.org/dataset/doi:10.5061/dryad.dv41ns23n). 
+The dataset used is Active region magnetograms for solar flare prediction: Full resolution dataset documented on Dryad and it can be found on this [link](https://datadryad.org/dataset/doi:10.5061/dryad.dv41ns23n). 
 
 For our work, we will focus on the Validation_data_by_AR.csv file, which contains pre-processed features extracted from solar active regions (ARs). Each row represents a single active region, while columns describe numerical measurements derived from magnetogram images captured by the SDO/HMI instrument.
 
-This file includes a total of 95,934 records and 31 features grouped into several categories:
+This file includes a total of 759,436 records and 31 features grouped into several categories:
 
 | Gradient features  | Neutral line features         | Wavelet features          | Flux features            | Flare class         | Image path                |
 |--------------------|------------------------------|---------------------------|---------------------------|---------------------|---------------------------|
@@ -69,5 +78,20 @@ Feature variance, correlation, and mutual information analyses helped identify t
 Further details and visualizations are available in the EECE490ProjectData.ipynb notebook.
 
 
+## Model Training Plan
+
+Our training process follows a step-by-step approach to ensure a clear understanding of each model, its purpose, and the reason it was chosen.
+**- Baseline – Support Vector Machine (SVM):**
+We begin with an SVM trained on the 29 extracted magnetic features to set a baseline. This model helps us understand how well linear decision boundaries perform on our data and establishes a reference point for future comparisons.
+
+**- Ensemble Models – Random Forest and XGBoost:**
+After the baseline, we move to ensemble models to explore nonlinear relationships between features. These models help us see how combining multiple decision trees can improve accuracy and reveal which magnetic parameters have the strongest impact on flare prediction.
+
+**- Neural Network**
+Finally, we plan to train an MLP to study how deeper architectures can capture complex feature interactions and subtle variations between flare categories. This step allows us to compare traditional models with deep learning approaches and understand their trade-offs.
+
+This is a preliminary proposal, and we will continue experimenting with additional models throughout the project. The goal is to compare their performance, interpretability, and generalization ability before finalizing the best approach.
+
+Each model will be evaluated using accuracy, precision, recall and F1-score. 
 
 
