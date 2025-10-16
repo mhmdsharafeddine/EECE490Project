@@ -1,4 +1,38 @@
 # Solar Flares Classification Project
+## Prerequisites
+- Python 3.8 or higher
+- Libraries
+  - Seaborn
+  - Matplotlib
+  - Numpy
+  - Scikit-learn
+  - Pytorch
+  - Pandas
+  - Tensorflow
+
+To install these modules please make sure to follow these steps:
+**On windows:**
+First check the version of the installed python
+  ``` bash
+python --version
+
+``` 
+and then download the new python version using this [link](https://www.python.org/downloads/).
+
+**On MacOs:**
+``` bash
+brew update
+brew install python
+python3 --version
+```
+
+After that, download the requirements.txt file found above and import these libraries using:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## Overview
 This project aims to predict solar flare intensity using machine learning models trained on features extracted from magnetogram images of solar active regions.
 Solar flares are categorized into four main classes based on their intensity: C, M, X, and 0 (no flare).
