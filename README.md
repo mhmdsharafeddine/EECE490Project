@@ -64,6 +64,7 @@ This file includes a total of 95,933 records and 32 features grouped into severa
 | Gradient skewness  | NL curvature median          |                           |                           |                     |                 |                           |
 | Gradient kurtosis  | NL curvature min             |                           |                           |                     |                 |                           |
 |                    | NL curvature max             |                           |                           |                     |                 |                           |
+|                    | NL bending energy mean             |                           |                           |                     |                 |                           |
 |                    | NL bending energy std        |                           |                           |                     |                 |                           |
 |                    | NL bending energy median     |                           |                           |                     |                 |                           |
 |                    | NL bending energy min        |                           |                           |                     |                 |                           |
