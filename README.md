@@ -50,7 +50,7 @@ Our objective is to identify patterns in solar magnetic data that help forecast 
 ## Dataset
 The dataset used is Active region magnetograms for solar flare prediction: Full resolution dataset documented on Dryad and it can be found on this [link](https://datadryad.org/dataset/doi:10.5061/dryad.dv41ns23n). 
 
-The dataset contains pre-processed features extracted from solar active regions (ARs). Each row represents a single active region, while columns describe numerical measurements derived from magnetogram images captured by the SDO/HMI instrument.
+The (dataset)[https://mailaub-my.sharepoint.com/:f:/g/personal/mas187_mail_aub_edu/Epg6IclqXTlOqW3wgPCbKCsBgmd0fJN-1ZzouFF7hH75uQ?e=7Ephh7] contains pre-processed features extracted from solar active regions (ARs). Each row represents a single active region, while columns describe numerical measurements derived from magnetogram images captured by the SDO/HMI instrument.
 
 This file includes a total of 950,048 records and 32 features grouped into several categories:
 
@@ -73,7 +73,7 @@ This file includes a total of 950,048 records and 32 features grouped into sever
 
 ## Data exploration
 
-The Validation_Data_by_AR dataset was explored to understand its structure, feature behavior, and class balance. An initial analysis showed that non-flare events dominate the data, leading to class imbalance. To handle this, flare strengths were grouped into four main categories (0, C, M, and X), with potential rebalancing through SMOTE in later stages.
+The (Validation_Data_by_AR dataset)[https://mailaub-my.sharepoint.com/:f:/g/personal/mas187_mail_aub_edu/Epg6IclqXTlOqW3wgPCbKCsBgmd0fJN-1ZzouFF7hH75uQ?e=7Ephh7] was explored to understand its structure, feature behavior, and class balance. An initial analysis showed that non-flare events dominate the data, leading to class imbalance. To handle this, flare strengths were grouped into four main categories (0, C, M, and X), with potential rebalancing through SMOTE in later stages.
 
 Feature variance, correlation, and mutual information analyses helped identify the most relevant predictors for solar flare classification. High-variance and strongly correlated features were found to carry the most information about flare strength, confirming that the dataset provides a strong foundation for model training.
 
