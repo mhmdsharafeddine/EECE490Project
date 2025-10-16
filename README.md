@@ -73,7 +73,7 @@ This file includes a total of 950,048 records and 32 features grouped into sever
 
 ## Data exploration
 
-The dataset was explored to understand its structure, feature behavior, and class balance. An initial analysis showed that non-flare events dominate the data, leading to class imbalance. To handle this, flare strengths were grouped into four main categories (0, C, M, and X), with potential rebalancing through SMOTE in later stages.
+The Validation_Data_by_AR dataset was explored to understand its structure, feature behavior, and class balance. An initial analysis showed that non-flare events dominate the data, leading to class imbalance. To handle this, flare strengths were grouped into four main categories (0, C, M, and X), with potential rebalancing through SMOTE in later stages.
 
 Feature variance, correlation, and mutual information analyses helped identify the most relevant predictors for solar flare classification. High-variance and strongly correlated features were found to carry the most information about flare strength, confirming that the dataset provides a strong foundation for model training.
 
