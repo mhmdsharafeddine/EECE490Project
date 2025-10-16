@@ -14,7 +14,7 @@
 
 To install these modules please make sure to follow these steps:
 
-**On windows:**
+**- On windows:**
 
 First check the version of the installed python
   ``` bash
@@ -23,7 +23,7 @@ python --version
 ``` 
 and then download the new python version using this [link](https://www.python.org/downloads/).
 
-**On MacOs:**
+**- On MacOs:**
 ``` bash
 brew update
 brew install python
